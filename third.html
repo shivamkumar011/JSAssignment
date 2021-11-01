@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION 3</title>
+    <style>
+        ul li{
+            font-size: 30px;
+        }
+        *{
+            align-items: center;
+            background-color: rgb(127, 187, 187);
+            margin: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>QUESTION 3</h1>
+    <h1>Explain thee difference between Undefined and not defined variables in JS using HTML page.</h1>
+     
+    <h2>Undefined possible cases:</h2>
+    <ul>
+         <li>Whenever we declare a variable without assigning any value to it, javascript implicitly assigns its value as undefined.</li>
+   <li>When value is not assigned in array or object</li>
+   <li> When functions don’t have a return statement but are called for assigning a value to a variable.</li>
+
+     </ul>
+     <h2>Not defined possible cases:</h2>
+     <ul>
+         <li>A not defined is a variable which is not declared at a given point of time with declaration keyword like var, let or const.</li>
+        
+     </ul>
+
+
+    <script>
+        let name;
+        console.log(name); //undefined
+
+        let arr = [54,2,,4];
+       console.log(arr);  
+       //[54, 2, empty, 4]
+        typeof(arr[2]);
+         //"undefined"
+
+         let sub = (a,b) => {
+           c = a-b;
+                          //return c;
+        }
+       let diff = sub(5,3);
+        console.log(diff); 
+      //Output: undefined
+
+
+    
+
+      console.log(b);
+       b = 5;
+//Output:- "ReferenceError: b is not defined
+    </script>
+</body>
+</html>

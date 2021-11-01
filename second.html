@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QUESTION2</title>
+    <style>
+        ul>li{
+        font-size: 30px;
+        }
+        *{
+            align-items: center;
+            background-color: rgba(62, 224, 224, 0.849);
+            margin: 10px;
+        }
+            
+        
+    </style>
+</head>
+<body>
+    <script >
+        // program to print a text 
+let a = "hello1";
+
+function greet1 () {
+    console.log(a);
+}
+
+greet1(); // hello1
+
+// program to show the change in global variable
+let v = "hello2";
+
+function greet2() {
+    v = 3;
+}
+
+// before the function call
+console.log(v);
+
+//after the function call
+greet2();
+console.log(v); // 3
+
+
+
+// program showing block-scoped concept
+// global variable
+let m = 'Hello3';
+
+function greet3() {
+
+    // local variable
+    let b = 'World';
+
+    console.log(m+ ' ' + b);
+
+    if (b == 'World') {
+
+        // block-scoped variable
+        let c = 'hello5';
+
+        console.log(m + ' ' + b + ' ' + c);
+    }
+
+    // variable c cannot be accessed here
+    console.log(m + ' ' + b + ' ' + c);
+}
+
+greet3();
+
+
+// program showing local scope of a variable
+let d = "hello4";
+
+function greet4() {
+    let t = "World"
+    console.log(d + t);
+}
+
+greet4();
+console.log(d + t); // error
+
+
+    </script>
+
+<div>
+    <div>
+        <h1>QUESTION 2</h1>
+        <h1>Show the Scope of variables in JS using HTML page.</h1>
+    </div>
+    
+    <ul>    <li> // program to print a text 
+    let a = "hello1";
+    
+    function greet1 () {
+        console.log(a);
+    }
+    
+    greet1(); // hello1
+</li> 
+    
+   <li> // program to show the change in global variable
+    let v = "hello2";
+    
+    function greet2() {
+        v = 3;
+    }
+    
+    // before the function call
+    console.log(v);
+    
+    //after the function call
+    greet2();
+    console.log(v); // 3
+</li> 
+    
+    
+    
+   <li> // program showing block-scoped concept
+    // global variable
+    let m = 'Hello3';
+    
+    function greet3() {
+    
+        // local variable
+        let b = 'World';
+    
+        console.log(m+ ' ' + b);
+    
+        if (b == 'World') {
+    
+            // block-scoped variable
+            let c = 'hello5';
+    
+            console.log(m + ' ' + b + ' ' + c);
+        }
+    
+        // variable c cannot be accessed here
+        console.log(m + ' ' + b + ' ' + c);
+    }
+    
+    greet3();
+</li> 
+    
+    
+   <li> // program showing local scope of a variable
+    let d = "hello4";
+    
+    function greet4() {
+        let t = "World"
+        console.log(d + t);
+    }
+    
+    greet4();
+    console.log(d + t); // error
+</li> 
+</ul>
+</div>
+
+</body>
+</html>
